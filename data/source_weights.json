@@ -1,0 +1,27 @@
+{
+  "sources": {
+    "twitter": [
+      {"handle": "@Citrini7", "id": "citrini7", "trust": 0.8, "total_signals": 0, "profitable_signals": 0},
+      {"handle": "@QwQiao", "id": "qwqiao", "trust": 0.75, "total_signals": 0, "profitable_signals": 0},
+      {"handle": "@tbr90", "id": "tbr90", "trust": 0.75, "total_signals": 0, "profitable_signals": 0},
+      {"handle": "@izebel_eth", "id": "izebel_eth", "trust": 0.7, "total_signals": 0, "profitable_signals": 0}
+    ],
+    "substack": [
+      {"name": "Citrini", "id": "citrini", "rss": "https://citrini.substack.com/feed", "trust": 0.8, "total_signals": 0, "profitable_signals": 0},
+      {"name": "Chamath", "id": "chamath", "rss": "https://chamath.substack.com/feed", "trust": 0.7, "total_signals": 0, "profitable_signals": 0},
+      {"name": "CryptoNarratives", "id": "cryptonarratives", "rss": "https://cryptonarratives.substack.com/feed", "trust": 0.75, "total_signals": 0, "profitable_signals": 0},
+      {"name": "evanss6", "id": "evanss6", "rss": "https://evanss6.substack.com/feed", "trust": 0.7, "total_signals": 0, "profitable_signals": 0},
+      {"name": "OldCoinBad", "id": "oldcoinbad", "rss": "https://oldcoinbad.substack.com/feed", "trust": 0.7, "total_signals": 0, "profitable_signals": 0}
+    ],
+    "telegram": [
+      {"name": "AnteaterAmazon", "id": "anteateramazon", "trust": 0.7, "total_signals": 0, "profitable_signals": 0},
+      {"name": "TradeWithChop", "id": "tradewithchop", "trust": 0.7, "total_signals": 0, "profitable_signals": 0}
+    ],
+    "websites": [
+      {"name": "epilepsywarning.com", "id": "epilepsywarning", "url": "https://epilepsywarning.com", "trust": 0.75, "total_signals": 0, "profitable_signals": 0}
+    ]
+  },
+  "learning_rate": 0.1,
+  "min_trust": 0.3,
+  "max_trust": 0.95
+}

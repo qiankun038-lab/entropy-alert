@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entropy Survivor | Alpha Intelligence System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">ENTROPY SURVIVOR</span>
+            </div>
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-label">Portfolio</span>
+                    <span class="stat-value" id="portfolio-value">$2,084.58</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">P&L</span>
+                    <span class="stat-value pnl-positive" id="total-pnl">+0.00%</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Last Update</span>
+                    <span class="stat-value" id="last-update">--</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-tab="alpha">Alpha Feed</button>
+            <button class="nav-btn" data-tab="worldview">Worldview</button>
+            <button class="nav-btn" data-tab="portfolio">Portfolio</button>
+            <button class="nav-btn" data-tab="execution">Execution</button>
+            <button class="nav-btn" data-tab="reflection">Reflection</button>
+            <button class="nav-btn" data-tab="input">Human Input</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Alpha Feed Tab -->
+            <section class="tab-content active" id="tab-alpha">
+                <div class="section-header">
+                    <h2>Live Alpha Feed</h2>
+                    <div class="filter-group">
+                        <select id="source-filter">
+                            <option value="all">All Sources</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="substack">Substack</option>
+                            <option value="telegram">Telegram</option>
+                            <option value="websites">Websites</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="alpha-feed" id="alpha-feed">
+                    <div class="alpha-card">
+                        <div class="alpha-meta">
+                            <span class="alpha-source twitter">@Citrini7</span>
+                            <span class="alpha-time">Awaiting first ingestion...</span>
+                        </div>
+                        <div class="alpha-content">
+                            <p>System initializing. Alpha signals will appear here.</p>
+                        </div>
+                        <div class="alpha-signal">
+                            <span class="signal-badge neutral">NEUTRAL</span>
+                            <span class="signal-confidence">Confidence: --</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Worldview Tab -->
+            <section class="tab-content" id="tab-worldview">
+                <div class="section-header">
+                    <h2>Current Worldview</h2>
+                    <span class="worldview-state" id="worldview-state">State: genesis</span>
+                </div>
+                
+                <div class="worldview-grid">
+                    <div class="worldview-card">
+                        <h3>Macro Thesis</h3>
+                        <div class="macro-regime" id="macro-regime">
+                            <span class="regime-label">Current Regime:</span>
+                            <span class="regime-value">Initializing...</span>
+                        </div>
+                        <div class="beliefs-list" id="beliefs-list">
+                            <p class="empty-state">No beliefs formed yet.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="worldview-card">
+                        <h3>Sector Views</h3>
+                        <div class="sector-bars" id="sector-bars">
+                            <div class="sector-bar">
+                                <span class="sector-name">Social Media</span>
+                                <div class="bar-container">
+                                    <div class="bar neutral" style="width: 50%"></div>
+                                </div>
+                                <span class="sector-stance">Neutral</span>
+                            </div>
+                            <div class="sector-bar">
+                                <span class="sector-name">Crypto AI</span>
+                                <div class="bar-container">
+                                    <div class="bar neutral" style="width: 50%"></div>
+                                </div>
+                                <span class="sector-stance">Neutral</span>
+                            </div>
+                            <div class="sector-bar">
+                                <span class="sector-name">DeFi</span>
+                                <div class="bar-container">
+                                    <div class="bar neutral" style="width: 50%"></div>
+                                </div>
+                                <span class="sector-stance">Neutral</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="worldview-card full-width">
+                        <h3>Active Theses</h3>
+                        <div class="theses-list" id="theses-list">
+                            <p class="empty-state">No active theses. Awaiting alpha signals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="worldview-card">
+                        <h3>Source Trust Scores</h3>
+                        <div class="trust-scores" id="trust-scores">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Tab -->
+            <section class="tab-content" id="tab-portfolio">
+                <div class="section-header">
+                    <h2>Portfolio Status</h2>
+                </div>
+                
+                <div class="portfolio-summary">
+                    <div class="summary-card">
+                        <span class="summary-label">Total Value</span>
+                        <span class="summary-value" id="port-total">$2,084.58</span>
+                    </div>
+                    <div class="summary-card">
+                        <span class="summary-label">Realized P&L</span>
+                        <span class="summary-value" id="port-realized">$0.00</span>
+                    </div>
+                    <div class="summary-card">
+                        <span class="summary-label">Unrealized P&L</span>
+                        <span class="summary-value" id="port-unrealized">$0.00</span>
+                    </div>
+                    <div class="summary-card">
+                        <span class="summary-label">Drawdown</span>
+                        <span class="summary-value" id="port-drawdown">0% / 15%</span>
+                    </div>
+                </div>
+                
+                <div class="positions-section">
+                    <h3>Open Positions</h3>
+                    <div class="positions-table" id="positions-table">
+                        <div class="table-header">
+                            <span>Asset</span>
+                            <span>Size</span>
+                            <span>Entry</span>
+                            <span>Current</span>
+                            <span>P&L</span>
+                            <span>Thesis</span>
+                        </div>
+                        <div class="table-empty">
+                            <p>No open positions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trades-history">
+                    <h3>Trade History</h3>
+                    <div class="trades-list" id="trades-list">
+                        <p class="empty-state">No trades executed yet.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Execution Tab -->
+            <section class="tab-content" id="tab-execution">
+                <div class="section-header">
+                    <h2>Trade Execution</h2>
+                </div>
+                
+                <div class="execution-queue">
+                    <h3>Pending Signals</h3>
+                    <div class="queue-list" id="queue-list">
+                        <p class="empty-state">No pending trade signals.</p>
+                    </div>
+                </div>
+                
+                <div class="execution-log">
+                    <h3>Execution Log</h3>
+                    <div class="log-list" id="execution-log">
+                        <div class="log-entry">
+                            <span class="log-time">--</span>
+                            <span class="log-message">System initialized. Awaiting trade signals.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="acp-agents">
+                    <h3>ACP Agent Usage</h3>
+                    <div class="agents-grid" id="agents-grid">
+                        <div class="agent-card">
+                            <span class="agent-name">Ethy AI</span>
+                            <span class="agent-trades">0 trades</span>
+                            <span class="agent-volume">$0 volume</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reflection Tab -->
+            <section class="tab-content" id="tab-reflection">
+                <div class="section-header">
+                    <h2>Performance Reflection</h2>
+                </div>
+                
+                <div class="reflection-grid">
+                    <div class="reflection-card">
+                        <h3>Source Leaderboard</h3>
+                        <div class="leaderboard" id="source-leaderboard">
+                            <p class="empty-state">Insufficient data for ranking.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="reflection-card">
+                        <h3>Thesis Performance</h3>
+                        <div class="thesis-perf" id="thesis-performance">
+                            <p class="empty-state">No closed theses to analyze.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="reflection-card full-width">
+                        <h3>Model Confidence Over Time</h3>
+                        <div class="confidence-chart" id="confidence-chart">
+                            <p class="empty-state">Chart will appear with more data.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="reflection-card full-width">
+                        <h3>Learning Notes</h3>
+                        <div class="learning-notes" id="learning-notes">
+                            <p class="empty-state">No reflections recorded yet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Human Input Tab -->
+            <section class="tab-content" id="tab-input">
+                <div class="section-header">
+                    <h2>Human Input</h2>
+                </div>
+                
+                <div class="input-forms">
+                    <div class="input-card">
+                        <h3>Add Override / Note</h3>
+                        <form id="override-form">
+                            <div class="form-group">
+                                <label>Type</label>
+                                <select id="override-type">
+                                    <option value="belief">Add Belief</option>
+                                    <option value="constraint">Add Constraint</option>
+                                    <option value="thesis">Manual Thesis</option>
+                                    <option value="note">General Note</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Content</label>
+                                <textarea id="override-content" rows="4" placeholder="Enter your input..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Confidence (if applicable)</label>
+                                <input type="range" id="override-confidence" min="0" max="100" value="70">
+                                <span id="confidence-display">70%</span>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit Input</button>
+                        </form>
+                    </div>
+                    
+                    <div class="input-card">
+                        <h3>Active Human Overrides</h3>
+                        <div class="overrides-list" id="overrides-list">
+                            <p class="empty-state">No active overrides.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <span>Entropy Survivor Alpha System v0.1</span>
+            </div>
+            <div class="footer-right">
+                <span class="status-indicator online"></span>
+                <span>System Online</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

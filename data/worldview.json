@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "last_updated": null,
+  "state_id": "genesis",
+  
+  "macro_thesis": {
+    "current_regime": "initializing",
+    "key_beliefs": []
+  },
+  
+  "sector_views": {
+    "social_media": {"stance": "neutral", "confidence": 0.5},
+    "crypto_ai": {"stance": "neutral", "confidence": 0.5},
+    "defi": {"stance": "neutral", "confidence": 0.5},
+    "trad_equities": {"stance": "neutral", "confidence": 0.5},
+    "options": {"stance": "neutral", "confidence": 0.5}
+  },
+  
+  "active_theses": [],
+  
+  "human_overrides": [],
+  
+  "risk_params": {
+    "max_drawdown_pct": 15,
+    "max_position_pct": 100,
+    "confidence_threshold_for_trade": 0.65
+  },
+  
+  "source_trust_scores": {
+    "@Citrini7": 0.8,
+    "@QwQiao": 0.75,
+    "@tbr90": 0.75,
+    "@izebel_eth": 0.7,
+    "citrini_substack": 0.8,
+    "chamath_substack": 0.7,
+    "cryptonarratives_substack": 0.75,
+    "evanss6_substack": 0.7,
+    "oldcoinbad_substack": 0.7,
+    "anteateramazon_tg": 0.7,
+    "tradewithchop_tg": 0.7,
+    "epilepsywarning": 0.75
+  }
+}
