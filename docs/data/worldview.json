@@ -1,0 +1,287 @@
+{
+  "version": 3,
+  "last_updated": "2026-02-08T17:20:00+08:00",
+  "state_id": "substack-ingest-20260208",
+  "macro_thesis": {
+    "current_regime": "cautious_bullish_transition",
+    "key_beliefs": [
+      "Equal-weight S&P500 (RSP) at ATH - breadth expanding, healthy market (Citrini7, high conviction)",
+      "AI capex cycle >$500B in 2026 by mag7 is justified - less of a bubble than feared (QwQiao)",
+      "NVDA trading at market multiple for 60%+ rev growth - still undervalued vs growth (Citrini7)",
+      "Warsh Fed chair nomination = hawkish regime change risk - end of Fed put narrative emerging (evanss6)",
+      "AI semis supply chain deepening beyond GPUs - memory, semicap subsystems, silicon photonics are next asymmetric trades (Citrini substack)",
+      "Solar energy at inflection - $500B/yr investment, cheapest new electricity source (Chamath)",
+      "Critical minerals strategic reserve (Project Vault $12B) - US vs China supply chain decoupling accelerating (Chamath)",
+      "Crypto long-term PMF: BTC, exchanges, stablecoins - focus on real revenue (izebel_eth)",
+      "BTC crashed to $76k end-Jan on Warsh fears + metals correlation - near-term bearish but economy strong (CryptoNarratives, evanss6)"
+    ]
+  },
+  "sector_views": {
+    "ai_infrastructure": {
+      "stance": "bullish",
+      "confidence": 0.82,
+      "notes": "NVDA undervalued, capex justified. Go deeper: memory supercycle (HBM, SK Hynix, Micron), semicap subsystems, advanced packaging (AMKR), silicon photonics"
+    },
+    "cybersecurity_saas": {
+      "stance": "bullish",
+      "confidence": 0.7,
+      "notes": "Oversold, IGV opportunity. Citrini watching for AI-driven SaaS selloff opportunities"
+    },
+    "crypto_btc": {
+      "stance": "cautious_neutral",
+      "confidence": 0.55,
+      "notes": "BTC crashed from $98k to $76k in Jan. Warsh = stronger dollar = headwind. But economy re-accelerating, Warsh may eventually pivot dovish. Near-term caution, long-term thesis intact"
+    },
+    "crypto_infra": {
+      "stance": "bullish",
+      "confidence": 0.7,
+      "notes": "HYPE strong after supply overhang cleared. Exchanges, stablecoins, real revenue. Equity perps (trade.xyz) emerging"
+    },
+    "equities_broad": {
+      "stance": "cautious_bullish",
+      "confidence": 0.7,
+      "notes": "RSP ATH breadth intact but Warsh hawkish risk. Economy strong, AI productivity deflationary. Bouncing from initial fear crash"
+    },
+    "precious_metals": {
+      "stance": "cautious_bearish",
+      "confidence": 0.6,
+      "notes": "Gold/silver had blowoff top (gold $5600 -> $4400, silver $121 -> $72). Stronger dollar under Warsh = headwind. Rebounding to $5100 but risk of more downside"
+    },
+    "solar_energy": {
+      "stance": "bullish",
+      "confidence": 0.65,
+      "notes": "NEW: $500B/yr investment, cheapest electricity. China 80-95% supply chain dominance = risk. US reshoring opportunity"
+    },
+    "autonomous_driving": {
+      "stance": "bullish",
+      "confidence": 0.65,
+      "notes": "NEW: Waymo $126B valuation, 400k rides/week, expanding to 20 new cities. Tesla unsupervised robotaxi launch"
+    },
+    "critical_minerals": {
+      "stance": "bullish",
+      "confidence": 0.6,
+      "notes": "NEW: Project Vault $12B US strategic reserve. Supply chain decoupling from China. FORGE alliance with 11 countries"
+    },
+    "social_media": {
+      "stance": "neutral",
+      "confidence": 0.5
+    },
+    "defi": {
+      "stance": "neutral",
+      "confidence": 0.5,
+      "notes": "On-chain activity returning (memecoins, Base AI meta) but mostly speculative"
+    }
+  },
+  "active_theses": [
+    {
+      "id": "nvda-undervalued",
+      "title": "NVDA undervalued relative to growth",
+      "description": "Nvidia trading at ~12m fwd market multiple despite 60%+ revenue growth. Hyperscaler capex oscillating but structural demand intact.",
+      "confidence": 0.8,
+      "direction": "long",
+      "sources": ["@Citrini7"],
+      "signal_weight": 12.9,
+      "updated_at": "2026-02-08T17:09:00+08:00"
+    },
+    {
+      "id": "ai-semis-deepening",
+      "title": "AI semis supply chain: go deeper than GPUs",
+      "description": "Memory supercycle (HBM, SK Hynix, Micron), semicap subsystems, silicon photonics, advanced packaging (AMKR) are the next asymmetric AI trades. Generalists who only know GPUs will miss these.",
+      "confidence": 0.78,
+      "direction": "long",
+      "sources": ["citrini_substack"],
+      "signal_weight": 10.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "ai-capex-justified",
+      "title": "AI capex cycle is real, not bubble",
+      "description": ">$500B 2026 capex by mag7 justified. AI makes strong software companies stronger. SpaceX-xAI merger validates long-term AI infrastructure buildout.",
+      "confidence": 0.78,
+      "direction": "long",
+      "sources": ["@QwQiao", "@Citrini7", "chamath_substack"],
+      "signal_weight": 7.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "breadth-expansion",
+      "title": "Market breadth healthy - RSP ATH",
+      "description": "Equal-weighted S&P500 at all-time highs. Breadth expanding. But Warsh nomination introduces hawkish risk.",
+      "confidence": 0.7,
+      "direction": "long",
+      "sources": ["@Citrini7"],
+      "signal_weight": 7.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "warsh-hawkish-risk",
+      "title": "Warsh Fed Chair = hawkish regime change",
+      "description": "Warsh anti-QE, wants to cut Fed balance sheet. End of Fed put narrative. Stronger dollar = headwind for metals, crypto. But may pivot dovish under pressure. Economy strong and re-accelerating.",
+      "confidence": 0.75,
+      "direction": "short_risk",
+      "sources": ["evanss6_substack", "cryptonarratives_substack"],
+      "signal_weight": 9.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "cybersecurity-oversold",
+      "title": "Cybersecurity/SaaS selling overdone",
+      "description": "Keep selling cybersecurity because of 'SaaS' seems imprudent. IGV weakness = opportunity. Citrini actively watching for AI-driven SaaS selloff opportunities.",
+      "confidence": 0.7,
+      "direction": "long",
+      "sources": ["@Citrini7", "citrini_substack"],
+      "signal_weight": 5.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "btc-near-term-caution",
+      "title": "BTC near-term bearish, long-term intact",
+      "description": "BTC crashed from $98k to $76k in Jan. Warsh = stronger dollar = headwind. Metals correlation dragged crypto down. But economy re-accelerating, Warsh will likely say dovish things. Hard asset thesis intact long-term.",
+      "confidence": 0.65,
+      "direction": "neutral",
+      "sources": ["@QwQiao", "evanss6_substack", "cryptonarratives_substack"],
+      "signal_weight": 7.5,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "hype-strong",
+      "title": "HYPE token - supply overhang cleared, strong fundamentals",
+      "description": "Tornado cluster done selling. Team unlocks 90% smaller than expected. HIP-4 predictions markets launching. Precious metals volume spike on HIP-3 markets. Pumped from $22 to $35 in one day after supply cleared.",
+      "confidence": 0.68,
+      "direction": "long",
+      "sources": ["cryptonarratives_substack"],
+      "signal_weight": 6.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "solar-energy-inflection",
+      "title": "Solar energy investment thesis",
+      "description": "Solar attracts $500B/yr, cheapest new electricity at $30-40/MWh. 90% cost decline. China dominates 80-95% of manufacturing - US reshoring opportunity. Data centers signing 40%+ of clean energy PPAs.",
+      "confidence": 0.65,
+      "direction": "long",
+      "sources": ["chamath_substack"],
+      "signal_weight": 5.5,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "critical-minerals-decoupling",
+      "title": "US critical minerals strategic reserve",
+      "description": "Project Vault $12B reserve. FORGE alliance with 11 countries. China 90% dominance in mineral processing. US securing supply chain for tech/defense.",
+      "confidence": 0.6,
+      "direction": "long",
+      "sources": ["chamath_substack"],
+      "signal_weight": 4.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "autonomous-driving-scaling",
+      "title": "Autonomous driving reaching commercial scale",
+      "description": "Waymo $126B valuation, 400k paid rides/week, expanding to 20 cities incl Tokyo/London. Tesla unsupervised robotaxi. 90% reduction in serious injury crashes.",
+      "confidence": 0.65,
+      "direction": "long",
+      "sources": ["chamath_substack"],
+      "signal_weight": 4.5,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "crypto-pmf-revenue",
+      "title": "Crypto PMF: exchanges, stablecoins, real revenue",
+      "description": "Long-term crypto PMF successes: BTC, exchanges, stablecoins. Focus on projects with real organic growth.",
+      "confidence": 0.7,
+      "direction": "long",
+      "sources": ["@izebel_eth"],
+      "signal_weight": 5.15,
+      "updated_at": "2026-02-08T17:09:00+08:00"
+    },
+    {
+      "id": "precious-metals-correction",
+      "title": "Precious metals blowoff top - caution",
+      "description": "Gold $5600->$4400 (-21%), Silver $121->$72 (-41%). One of worst days ever. Rebounding to $5100 but Warsh stronger dollar = continued headwind.",
+      "confidence": 0.65,
+      "direction": "neutral",
+      "sources": ["cryptonarratives_substack", "evanss6_substack"],
+      "signal_weight": 6.0,
+      "updated_at": "2026-02-08T17:20:00+08:00"
+    },
+    {
+      "id": "ipo-caution-2026",
+      "title": "2026 IPOs - timing chosen by companies, not investors",
+      "description": "No matter how bullish long-term, understand companies choose to IPO at favorable windows. Caution on chasing.",
+      "confidence": 0.65,
+      "direction": "neutral",
+      "sources": ["@QwQiao"],
+      "signal_weight": 2.11,
+      "updated_at": "2026-02-08T17:09:00+08:00"
+    }
+  ],
+  "human_overrides": [],
+  "risk_params": {
+    "max_drawdown_pct": 15,
+    "max_position_pct": 100,
+    "confidence_threshold_for_trade": 0.65
+  },
+  "source_trust_scores": {
+    "@Citrini7": 0.8,
+    "@QwQiao": 0.75,
+    "@tbr90": 0.75,
+    "@izebel_eth": 0.7,
+    "citrini_substack": 0.8,
+    "chamath_substack": 0.7,
+    "cryptonarratives_substack": 0.75,
+    "evanss6_substack": 0.7,
+    "oldcoinbad_substack": 0.7,
+    "anteateramazon_tg": 0.7,
+    "tradewithchop_tg": 0.7,
+    "epilepsywarning": 0.75
+  },
+  "market_regime": {
+    "label": "cautious_bullish_transition",
+    "description": "Market breadth still healthy (RSP ATH) but facing Warsh hawkish regime change risk. BTC crashed to $76k, metals had blowoff top correction. Economy strong and re-accelerating. AI infrastructure thesis deepening beyond GPUs into memory/semicap/packaging. Solar energy at historic inflection. Bouncing from initial Warsh fear crash but volatility elevated.",
+    "confidence": 0.65,
+    "updated_at": "2026-02-08T17:20:00+08:00"
+  },
+  "risk_factors": [
+    {
+      "id": "warsh-hawkish",
+      "description": "Warsh Fed Chair = end of Fed put, anti-QE, balance sheet reduction. Stronger dollar bad for metals/crypto (evanss6, CryptoNarratives)",
+      "severity": "high",
+      "probability": 0.7
+    },
+    {
+      "id": "btc-downside",
+      "description": "BTC already hit $76k. Could see further downside if Warsh tightens. But economy strong, may stabilize (evanss6)",
+      "severity": "medium",
+      "probability": 0.35
+    },
+    {
+      "id": "metals-correction",
+      "description": "Gold/silver had historic blowoff top and crash. May continue correcting under stronger dollar (CryptoNarratives)",
+      "severity": "medium",
+      "probability": 0.45
+    },
+    {
+      "id": "capex-sentiment-oscillation",
+      "description": "Hyperscaler capex sentiment swings between positive/negative (Citrini7)",
+      "severity": "medium",
+      "probability": 0.4
+    },
+    {
+      "id": "china-supply-chain",
+      "description": "China 80-95% solar manufacturing, 90% mineral processing. Geopolitical supply chain risk (Chamath)",
+      "severity": "medium",
+      "probability": 0.35
+    },
+    {
+      "id": "ipo-supply",
+      "description": "2026 IPO wave could absorb capital at unfavorable valuations (QwQiao)",
+      "severity": "low",
+      "probability": 0.5
+    },
+    {
+      "id": "speculative-excess",
+      "description": "New token launches mostly bleed. Memecoins/scams still rampant (RIVER $9B FDV scam). Speculative nonsense contained but present (CryptoNarratives)",
+      "severity": "low",
+      "probability": 0.4
+    }
+  ]
+}

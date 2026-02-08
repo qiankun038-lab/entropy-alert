@@ -47,14 +47,14 @@ function switchTab(tab) {
 async function loadData() {
     try {
         // Load worldview
-        const wvResponse = await fetch('/data/worldview.json');
+        const wvResponse = await fetch('data/worldview.json');
         if (wvResponse.ok) {
             worldviewData = await wvResponse.json();
             renderWorldview();
         }
         
         // Load source weights
-        const swResponse = await fetch('/data/source_weights.json');
+        const swResponse = await fetch('data/source_weights.json');
         if (swResponse.ok) {
             sourceWeights = await swResponse.json();
             renderSourceTrust();
@@ -74,7 +74,7 @@ async function loadData() {
 
 async function loadAlphaFeed() {
     try {
-        const response = await fetch('/data/alpha.jsonl');
+        const response = await fetch('data/alpha.jsonl');
         if (response.ok) {
             const text = await response.text();
             alphaData = text.trim().split('\n')
@@ -90,7 +90,7 @@ async function loadAlphaFeed() {
 
 async function loadTrades() {
     try {
-        const response = await fetch('/data/trades.jsonl');
+        const response = await fetch('data/trades.jsonl');
         if (response.ok) {
             const text = await response.text();
             tradesData = text.trim().split('\n')
